@@ -1,0 +1,935 @@
+  [1m[35m (538.1ms)[0m  [1m[35mCREATE DATABASE "MusicApp_development" ENCODING = 'unicode'[0m
+  [1m[35m (359.5ms)[0m  [1m[35mCREATE DATABASE "MusicApp_test" ENCODING = 'unicode'[0m
+  [1m[35m (22.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (18.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1555902080779534005)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230509173652)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (54.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (20.1ms)[0m  [1m[35mCREATE INDEX "index_users_on_session_token" ON "users" ("session_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230509173652"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-05-09 17:42:12.935500"], ["updated_at", "2023-05-09 17:42:12.935500"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1555902080779534005)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/sessions/new" for ::1 at 2023-05-09 12:02:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 868)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/sessions_controller.rb:3:in `new'
+
+Started POST "/__better_errors/267e649fea7c441c/variables" for ::1 at 2023-05-09 12:02:29 -0700
+Started GET "/sessions/new" for ::1 at 2023-05-09 12:02:47 -0700
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 665)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/sessions_controller.rb:3:in `new'
+
+Started POST "/__better_errors/ec6d99ae8dbd4247/variables" for ::1 at 2023-05-09 12:02:47 -0700
+Started GET "/sessions/new" for ::1 at 2023-05-09 12:02:52 -0700
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 648)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/sessions_controller.rb:3:in `new'
+
+Started POST "/__better_errors/a542d1295b2381f9/variables" for ::1 at 2023-05-09 12:02:52 -0700
+Started GET "/" for ::1 at 2023-05-09 12:02:58 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nj/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nj/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.4ms | Allocations: 520)
+Completed 200 OK in 38ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 2754)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 12:03:08 -0700
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 659)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/sessions_controller.rb:3:in `new'
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 12:03:10 -0700
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 646)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/sessions_controller.rb:3:in `new'
+
+Started POST "/__better_errors/460fc3e0571f7f6e/variables" for ::1 at 2023-05-09 12:03:10 -0700
+Started GET "/sessions/new" for ::1 at 2023-05-09 12:03:19 -0700
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 646)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/sessions_controller.rb:3:in `new'
+
+Started POST "/__better_errors/731a8c27f615bac8/variables" for ::1 at 2023-05-09 12:03:19 -0700
+Started GET "/user" for ::1 at 2023-05-09 12:03:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/rails/info/routes?path=s" for ::1 at 2023-05-09 12:03:31 -0700
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"s"}
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 728)
+
+
+Started GET "/rails/info/routes?path=s\" for ::1 at 2023-05-09 12:03:33 -0700
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"s\\"}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 227)
+
+
+Started GET "/rails/info/routes?path=s" for ::1 at 2023-05-09 12:03:33 -0700
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"s"}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/users" for ::1 at 2023-05-09 12:03:37 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for ::1 at 2023-05-09 12:03:44 -0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/users_controller.rb:3:in `new'
+
+Started POST "/__better_errors/0ac3c1ec6e26789f/variables" for ::1 at 2023-05-09 12:03:44 -0700
+Started GET "/sessions/new" for ::1 at 2023-05-09 12:08:51 -0700
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 645)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/sessions_controller.rb:3:in `new'
+
+Started GET "/users/new" for ::1 at 2023-05-09 12:08:55 -0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 4ms (Allocations: 658)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/users_controller.rb:3:in `new'
+
+Started POST "/__better_errors/4c9944727e67a598/variables" for ::1 at 2023-05-09 12:08:55 -0700
+Started GET "/users" for ::1 at 2023-05-09 12:09:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/" for ::1 at 2023-05-09 12:09:07 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nj/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nj/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.1ms | Allocations: 278)
+Completed 200 OK in 9ms (Views: 6.7ms | Allocations: 826)
+
+
+Started GET "/" for ::1 at 2023-05-09 12:09:39 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nj/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nj/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 15)
+Completed 200 OK in 3ms (Views: 1.8ms | Allocations: 210)
+
+
+Started GET "/new_user" for ::1 at 2023-05-09 12:09:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new_user"):
+  
+Started GET "/user" for ::1 at 2023-05-09 12:10:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/new_session" for ::1 at 2023-05-09 12:11:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new_session"):
+  
+Started GET "/users/new" for ::1 at 2023-05-09 13:33:51 -0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 54ms (Allocations: 650)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/users_controller.rb:3:in `new'
+
+Started POST "/__better_errors/eded61fc6166907c/variables" for ::1 at 2023-05-09 13:33:51 -0700
+Started GET "/users/new" for ::1 at 2023-05-09 13:34:01 -0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 5ms (Allocations: 645)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/users_controller.rb:3:in `new'
+
+Started POST "/__better_errors/12417e179446d25f/variables" for ::1 at 2023-05-09 13:34:01 -0700
+Started GET "/users/new" for ::1 at 2023-05-09 13:34:07 -0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 645)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/users_controller.rb:3:in `new'
+
+Started POST "/__better_errors/b75fd918575d8cb0/variables" for ::1 at 2023-05-09 13:34:07 -0700
+Started GET "/" for ::1 at 2023-05-09 13:34:12 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nj/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nj/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.3ms | Allocations: 16)
+Completed 200 OK in 11ms (Views: 7.4ms | Allocations: 194)
+
+
+Started GET "/users/new" for ::1 at 2023-05-09 13:51:52 -0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 5ms (Allocations: 645)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/users_controller.rb:3:in `new'
+
+Started POST "/__better_errors/6878e4fbbba80b9a/variables" for ::1 at 2023-05-09 13:51:52 -0700
+Started GET "/new_user" for ::1 at 2023-05-09 13:53:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new_user"):
+  
+Started GET "/sessions" for ::1 at 2023-05-09 13:53:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  
+Started GET "/sessions" for ::1 at 2023-05-09 13:55:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  
+Started GET "/session" for ::1 at 2023-05-09 13:55:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  
+Started GET "/session/new" for ::1 at 2023-05-09 13:56:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/session/new"):
+  
+Started GET "/sessions/new" for ::1 at 2023-05-09 13:57:12 -0700
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 699)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/sessions_controller.rb:3:in `new'
+
+Started POST "/__better_errors/7c4913fe163a357a/variables" for ::1 at 2023-05-09 13:57:12 -0700
+Started GET "/sessions/new" for ::1 at 2023-05-09 13:59:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 868)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/sessions_controller.rb:3:in `new'
+
+Started POST "/__better_errors/b207e4b1e82585c6/variables" for ::1 at 2023-05-09 13:59:36 -0700
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:01:34 -0700
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 82516ms (ActiveRecord: 0.0ms | Allocations: 186149)
+
+
+
+SyntaxError - Invalid return in class/module body
+            return user
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:23: Invalid return in class/module body
+            return nil 
+            ^~~~~~
+/home/nj/app_academy/classwork/week7/w7d2/W7D2/practice-for-ch-rails-music-app-long-practice-main/MusicApp/app/models/user.rb:59: syntax error, unexpected `end', expecting end-of-input:
+  app/models/user.rb:21:in `'
+  app/controllers/sessions_controller.rb:4:in `new'
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:02:56 -0700
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 1442ms (ActiveRecord: 0.0ms | Allocations: 3865)
+
+
+
+ArgumentError - Unknown key: :length. Valid keys are: :on, :if, :unless, :prepend. Perhaps you meant to call `validates` instead of `validate`?:
+  app/models/user.rb:14:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/sessions_controller.rb:4:in `new'
+
+Started POST "/__better_errors/5bcb624cdacce7ba/variables" for ::1 at 2023-05-09 14:02:58 -0700
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:03:06 -0700
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1276)
+
+
+
+ArgumentError - Unknown key: :length. Valid keys are: :on, :if, :unless, :prepend. Perhaps you meant to call `validates` instead of `validate`?:
+  app/models/user.rb:14:in `<class:User>'
+  app/models/user.rb:12:in `<top (required)>'
+  app/controllers/sessions_controller.rb:4:in `new'
+
+Started POST "/__better_errors/c506d06541e4c1b0/variables" for ::1 at 2023-05-09 14:03:06 -0700
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:03:44 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (4.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 326)
+  Rendered layout layouts/application.html.erb (Duration: 124.2ms | Allocations: 12402)
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 22.5ms | Allocations: 22868)
+
+
+
+NoMethodError - undefined method `logged_in?' for #<ActionView::Base:0x00000000009948>
+Did you mean?  logged_in:
+  app/views/layouts/application.html.erb:12
+  app/controllers/sessions_controller.rb:5:in `new'
+
+Started POST "/__better_errors/46ef9b0fc0822c54/variables" for ::1 at 2023-05-09 14:03:44 -0700
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:04:24 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 12)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2422)
+Completed 200 OK in 47ms (Views: 17.6ms | ActiveRecord: 9.1ms | Allocations: 6444)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:04:40 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 1938)
+Completed 200 OK in 24ms (Views: 15.5ms | ActiveRecord: 2.7ms | Allocations: 2769)
+
+
+Started GET "/users/new" for ::1 at 2023-05-09 14:04:44 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 40.3ms | Allocations: 5749)
+  Rendered layout layouts/application.html.erb (Duration: 41.2ms | Allocations: 5837)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.9ms | Allocations: 7126)
+
+
+
+NoMethodError - undefined method `username' for #<User id: nil, email: nil, password_digest: nil, session_token: [FILTERED], created_at: nil, updated_at: nil>:
+  app/views/users/new.html.erb:2
+  app/controllers/users_controller.rb:4:in `new'
+
+Started POST "/__better_errors/e946ad1caf00a4a8/variables" for ::1 at 2023-05-09 14:04:44 -0700
+Started GET "/users/new" for ::1 at 2023-05-09 14:09:27 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 39.5ms | Allocations: 5668)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 5756)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 2.3ms | Allocations: 7126)
+
+
+
+NoMethodError - undefined method `username' for #<User id: nil, email: nil, password_digest: nil, session_token: [FILTERED], created_at: nil, updated_at: nil>:
+  app/views/users/new.html.erb:2
+  app/controllers/users_controller.rb:4:in `new'
+
+Started POST "/__better_errors/64c4890cce980fbe/variables" for ::1 at 2023-05-09 14:09:27 -0700
+Started GET "/users/new" for ::1 at 2023-05-09 14:09:30 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 52.1ms | Allocations: 5518)
+  Rendered layout layouts/application.html.erb (Duration: 53.0ms | Allocations: 5597)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 1.2ms | Allocations: 6485)
+
+
+
+NoMethodError - undefined method `username' for #<User id: nil, email: nil, password_digest: nil, session_token: [FILTERED], created_at: nil, updated_at: nil>:
+  app/views/users/new.html.erb:2
+  app/controllers/users_controller.rb:4:in `new'
+
+Started POST "/__better_errors/a58d73c0bf8cc8c7/variables" for ::1 at 2023-05-09 14:09:30 -0700
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:09:37 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 48.7ms | Allocations: 5741)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 5829)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 1.2ms | Allocations: 6890)
+
+
+
+NoMethodError - undefined method `username' for #<User id: nil, email: nil, password_digest: nil, session_token: [FILTERED], created_at: nil, updated_at: nil>:
+  app/views/sessions/new.html.erb:3
+  app/controllers/sessions_controller.rb:5:in `new'
+
+Started POST "/__better_errors/26a14f60d6d43c9c/variables" for ::1 at 2023-05-09 14:09:37 -0700
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:10:14 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 187)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 2710)
+Completed 200 OK in 32ms (Views: 23.3ms | ActiveRecord: 2.4ms | Allocations: 4103)
+
+
+Started GET "/users/new" for ::1 at 2023-05-09 14:10:36 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 47.5ms | Allocations: 5671)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 5759)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 1.2ms | Allocations: 6852)
+
+
+
+NoMethodError - undefined method `username' for #<User id: nil, email: nil, password_digest: nil, session_token: [FILTERED], created_at: nil, updated_at: nil>:
+  app/views/users/new.html.erb:2
+  app/controllers/users_controller.rb:4:in `new'
+
+Started POST "/__better_errors/6b393573bacf3448/variables" for ::1 at 2023-05-09 14:10:36 -0700
+Started GET "/users/new" for ::1 at 2023-05-09 14:11:21 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 34.0ms | Allocations: 5669)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 5757)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.9ms | Allocations: 7129)
+
+
+
+NoMethodError - undefined method `username' for #<User id: nil, email: nil, password_digest: nil, session_token: [FILTERED], created_at: nil, updated_at: nil>:
+  app/views/users/new.html.erb:2
+  app/controllers/users_controller.rb:4:in `new'
+
+Started POST "/__better_errors/0e97ac0f9aa7edfe/variables" for ::1 at 2023-05-09 14:11:21 -0700
+Started GET "/users/new" for ::1 at 2023-05-09 14:11:50 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 131)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2722)
+Completed 200 OK in 24ms (Views: 16.6ms | ActiveRecord: 2.1ms | Allocations: 4126)
+
+
+Started GET "/users/new" for ::1 at 2023-05-09 14:12:08 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 7)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 1890)
+Completed 200 OK in 28ms (Views: 16.4ms | ActiveRecord: 2.1ms | Allocations: 2723)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:12:20 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 185)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 2453)
+Completed 200 OK in 31ms (Views: 21.3ms | ActiveRecord: 2.6ms | Allocations: 3532)
+
+
+Started POST "/sessions" for ::1 at 2023-05-09 14:12:30 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"testing@email.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.0ms | Allocations: 713)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/d53b1a436f09c0f7/variables" for ::1 at 2023-05-09 14:12:30 -0700
+Started POST "/sessions" for ::1 at 2023-05-09 14:14:20 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"testing@email.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 709)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/92ba033a9e13b326/variables" for ::1 at 2023-05-09 14:14:20 -0700
+Started POST "/sessions" for ::1 at 2023-05-09 14:14:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"testing@email.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.0ms | Allocations: 919)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/__better_errors/765956cb2d8db9e8/variables" for ::1 at 2023-05-09 14:14:39 -0700
+Started POST "/sessions" for ::1 at 2023-05-09 14:15:00 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"testing@email.com", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 4.0ms | Allocations: 4668)
+
+
+
+ActiveRecord::StatementInvalid - PG::UndefinedColumn: ERROR:  column users.username does not exist
+LINE 1: SELECT "users".* FROM "users" WHERE "users"."username" IS NU...
+                                            ^:
+  app/models/user.rb:19:in `find_by_credentials'
+  app/controllers/sessions_controller.rb:9:in `create'
+
+Started POST "/__better_errors/dec9edce306c628c/variables" for ::1 at 2023-05-09 14:15:00 -0700
+Started POST "/sessions" for ::1 at 2023-05-09 14:15:42 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"testing@email.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/user.rb:19:in `find_by_credentials'
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 10.2ms | Allocations: 7363)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'username' for User.
+          raise UnknownAttributeError.new(self, k.to_s)
+          ^^^^^:
+  app/controllers/sessions_controller.rb:14:in `create'
+
+Started POST "/__better_errors/0909d21c7acffd96/variables" for ::1 at 2023-05-09 14:15:42 -0700
+Started POST "/sessions" for ::1 at 2023-05-09 14:16:17 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"testing@email.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testing@email.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:19:in `find_by_credentials'
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 459)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 4991)
+Completed 200 OK in 82ms (Views: 41.2ms | ActiveRecord: 14.9ms | Allocations: 12253)
+
+
+Started POST "/sessions" for ::1 at 2023-05-09 14:16:24 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"testing@email.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testing@email.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:19:in `find_by_credentials'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 54)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 2089)
+Completed 200 OK in 31ms (Views: 16.2ms | ActiveRecord: 2.8ms | Allocations: 3552)
+
+
+Started POST "/sessions" for ::1 at 2023-05-09 14:16:38 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"testing@email.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testing@email.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:19:in `find_by_credentials'
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 1910)
+Completed 200 OK in 32ms (Views: 18.9ms | ActiveRecord: 3.6ms | Allocations: 3164)
+
+
+Started GET "/users/new" for ::1 at 2023-05-09 14:20:50 -0700
+Processing by UsersController#new as HTML
+  [1m[36mUser Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 131)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 2456)
+Completed 200 OK in 26ms (Views: 18.1ms | ActiveRecord: 3.1ms | Allocations: 3765)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:20:52 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 1935)
+Completed 200 OK in 24ms (Views: 16.1ms | ActiveRecord: 2.1ms | Allocations: 2735)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:27:35 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (2.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 3721)
+Completed 200 OK in 77ms (Views: 33.0ms | ActiveRecord: 22.6ms | Allocations: 7320)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:40:15 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 188)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 2836)
+Completed 200 OK in 48ms (Views: 17.8ms | ActiveRecord: 15.3ms | Allocations: 6742)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:41:02 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 102.1ms | Allocations: 3355)
+Completed 200 OK in 124ms (Views: 102.9ms | ActiveRecord: 1.7ms | Allocations: 4154)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:41:25 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 39)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 3248)
+Completed 200 OK in 35ms (Views: 28.3ms | ActiveRecord: 2.2ms | Allocations: 4008)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:41:52 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 39)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 3275)
+Completed 200 OK in 46ms (Views: 34.7ms | ActiveRecord: 1.9ms | Allocations: 4035)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:42:26 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 3246)
+Completed 200 OK in 37ms (Views: 30.7ms | ActiveRecord: 1.8ms | Allocations: 4006)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:42:28 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 39)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 1912)
+Completed 200 OK in 27ms (Views: 19.4ms | ActiveRecord: 1.8ms | Allocations: 2672)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:46:33 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 39)
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 3275)
+Completed 200 OK in 52ms (Views: 40.2ms | ActiveRecord: 6.4ms | Allocations: 4035)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:47:25 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 194)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 2724)
+Completed 200 OK in 34ms (Views: 24.3ms | ActiveRecord: 1.9ms | Allocations: 3963)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:48:05 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 3346)
+Completed 200 OK in 41ms (Views: 34.6ms | ActiveRecord: 1.6ms | Allocations: 4145)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:48:23 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 189)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 2728)
+Completed 200 OK in 32ms (Views: 24.1ms | ActiveRecord: 1.9ms | Allocations: 3967)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:48:50 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 3343)
+Completed 200 OK in 37ms (Views: 30.2ms | ActiveRecord: 1.6ms | Allocations: 4142)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:49:26 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 3251)
+Completed 200 OK in 39ms (Views: 30.5ms | ActiveRecord: 1.7ms | Allocations: 4011)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:49:37 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 3249)
+Completed 200 OK in 48ms (Views: 38.4ms | ActiveRecord: 2.4ms | Allocations: 4010)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:50:52 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 3270)
+Completed 200 OK in 39ms (Views: 31.2ms | ActiveRecord: 1.7ms | Allocations: 4030)
+
+

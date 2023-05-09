@@ -8,7 +8,18 @@
 
     <%= stylesheet_link_tag "application" %>
   </head>
-
+  <header>
+  <%if logged_in?%>
+  <h2><%=current_user.username%></h2>
+  <form action=<%=sessions_url%> method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Log Out">
+  </form>
+  <%else%>
+  <a href=<%=new_sessions_url%>>Log In</a>
+  <a href=<%=new_user_url%>>Sign Up</a>
+  <%end%>
+</header>
   <body>
     <%= yield %>
   </body>
