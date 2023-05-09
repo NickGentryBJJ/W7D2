@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= stylesheet_link_tag "reset" %>
     <%= stylesheet_link_tag "application" %>
   </head>
   <header>
   <%if logged_in?%>
-  <h2><%=current_user.username%></h2>
+  <h2><%=current_user.email%></h2>
   <form action=<%=sessions_url%> method="POST">
   <input type="hidden" name="_method" value="DELETE">
   <input type="submit" value="Log Out">

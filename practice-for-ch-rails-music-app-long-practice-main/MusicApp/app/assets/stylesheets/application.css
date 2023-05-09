@@ -15,13 +15,39 @@
  */
     h1 { display: flex;
         justify-content: center;
+        font-size: xx-large;
+        margin: 30px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         background-color: magenta;
         color: rgb(5, 88, 88);
     }
     h2 {display: flex;
+        font-size: x-large;
+        margin: 20px;
         justify-content: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         background-color: magenta;
         color: blueviolet;
+    }
+    a {
+
+        width: 10%;
+        margin: 10px;
+        display: flex;
+        justify-content: right;
+        align-content: flex-end;
+
+        background-color: rgb(89, 0, 255);
+        border-radius: 100px;
+        color: antiquewhite;
+    }
+    label {
+        margin: 5px;
+        display: flex;
+        justify-content: left;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }

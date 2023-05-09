@@ -933,3 +933,757 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 39ms (Views: 31.2ms | ActiveRecord: 1.7ms | Allocations: 4030)
 
 
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:54:06 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 3284)
+Completed 200 OK in 30ms (Views: 23.1ms | ActiveRecord: 1.6ms | Allocations: 4044)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:54:22 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 3268)
+Completed 200 OK in 31ms (Views: 22.3ms | ActiveRecord: 1.7ms | Allocations: 4028)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:54:33 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 3259)
+Completed 200 OK in 31ms (Views: 23.8ms | ActiveRecord: 1.6ms | Allocations: 4019)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:54:35 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 39)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 1932)
+Completed 200 OK in 18ms (Views: 11.0ms | ActiveRecord: 1.9ms | Allocations: 2692)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:54:57 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 3271)
+Completed 200 OK in 28ms (Views: 21.6ms | ActiveRecord: 1.7ms | Allocations: 4031)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:54:59 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 1923)
+Completed 200 OK in 21ms (Views: 14.3ms | ActiveRecord: 1.7ms | Allocations: 2683)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:55:05 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 39)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 3259)
+Completed 200 OK in 31ms (Views: 23.9ms | ActiveRecord: 1.6ms | Allocations: 4019)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:55:06 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 1917)
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 1.8ms | Allocations: 2677)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:55:21 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 3265)
+Completed 200 OK in 29ms (Views: 22.6ms | ActiveRecord: 1.8ms | Allocations: 4025)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:55:34 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 3257)
+Completed 200 OK in 30ms (Views: 24.3ms | ActiveRecord: 1.5ms | Allocations: 4017)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:57:23 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 3284)
+Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 2.0ms | Allocations: 4044)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:57:24 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 1902)
+Completed 200 OK in 60ms (Views: 53.4ms | ActiveRecord: 1.6ms | Allocations: 2662)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:57:55 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 3248)
+Completed 200 OK in 34ms (Views: 26.9ms | ActiveRecord: 2.0ms | Allocations: 4008)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:58:06 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 3248)
+Completed 200 OK in 32ms (Views: 24.6ms | ActiveRecord: 1.9ms | Allocations: 4008)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:58:08 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 1920)
+Completed 200 OK in 21ms (Views: 14.2ms | ActiveRecord: 1.9ms | Allocations: 2680)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:58:16 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 39)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 3266)
+Completed 200 OK in 29ms (Views: 21.9ms | ActiveRecord: 1.5ms | Allocations: 4026)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:58:18 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 39)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 1920)
+Completed 200 OK in 25ms (Views: 16.1ms | ActiveRecord: 2.0ms | Allocations: 2680)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:58:31 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 3272)
+Completed 200 OK in 32ms (Views: 24.8ms | ActiveRecord: 2.0ms | Allocations: 4032)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 14:58:40 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 1960)
+Completed 200 OK in 21ms (Views: 13.3ms | ActiveRecord: 2.3ms | Allocations: 2720)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:00:40 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 3277)
+Completed 200 OK in 30ms (Views: 23.6ms | ActiveRecord: 1.7ms | Allocations: 4037)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:00:53 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 3268)
+Completed 200 OK in 33ms (Views: 26.4ms | ActiveRecord: 1.8ms | Allocations: 4028)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:01:03 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 3268)
+Completed 200 OK in 30ms (Views: 23.5ms | ActiveRecord: 1.7ms | Allocations: 4028)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:01:20 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 39)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 3265)
+Completed 200 OK in 39ms (Views: 29.3ms | ActiveRecord: 2.0ms | Allocations: 4025)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:01:29 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 1960)
+Completed 200 OK in 21ms (Views: 14.1ms | ActiveRecord: 1.7ms | Allocations: 2720)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:07:22 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 39)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 3381)
+Completed 200 OK in 69ms (Views: 27.2ms | ActiveRecord: 20.7ms | Allocations: 6963)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:09:11 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 193)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 4149)
+Completed 200 OK in 38ms (Views: 31.7ms | ActiveRecord: 1.8ms | Allocations: 5388)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:11:58 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 188)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 1793)
+Completed 200 OK in 35ms (Views: 26.1ms | ActiveRecord: 1.8ms | Allocations: 3096)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:12:44 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 191)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 2726)
+Completed 200 OK in 27ms (Views: 18.8ms | ActiveRecord: 1.7ms | Allocations: 4005)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:15:14 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 3382)
+Completed 200 OK in 33ms (Views: 24.6ms | ActiveRecord: 1.9ms | Allocations: 4181)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:15:19 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 39)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 1917)
+Completed 200 OK in 21ms (Views: 13.8ms | ActiveRecord: 2.2ms | Allocations: 2678)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:15:20 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 1908)
+Completed 200 OK in 18ms (Views: 11.6ms | ActiveRecord: 1.8ms | Allocations: 2668)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:16:16 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 3273)
+Completed 200 OK in 32ms (Views: 23.7ms | ActiveRecord: 1.6ms | Allocations: 4033)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:16:38 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 3264)
+Completed 200 OK in 28ms (Views: 22.2ms | ActiveRecord: 1.6ms | Allocations: 4024)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:16:52 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 3261)
+Completed 200 OK in 31ms (Views: 22.5ms | ActiveRecord: 1.6ms | Allocations: 4021)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:17:03 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 3279)
+Completed 200 OK in 35ms (Views: 27.9ms | ActiveRecord: 1.9ms | Allocations: 4039)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:17:28 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 39)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 3261)
+Completed 200 OK in 34ms (Views: 28.0ms | ActiveRecord: 1.2ms | Allocations: 4021)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:17:37 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 39)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 53.0ms | Allocations: 3276)
+Completed 200 OK in 61ms (Views: 54.3ms | ActiveRecord: 1.8ms | Allocations: 4036)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:18:09 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 39)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 3258)
+Completed 200 OK in 35ms (Views: 26.4ms | ActiveRecord: 2.0ms | Allocations: 4018)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:19:11 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 39)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 3294)
+Completed 200 OK in 31ms (Views: 22.8ms | ActiveRecord: 2.5ms | Allocations: 4054)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:20:39 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 3276)
+Completed 200 OK in 31ms (Views: 23.3ms | ActiveRecord: 1.8ms | Allocations: 4036)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:21:42 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 3276)
+Completed 200 OK in 33ms (Views: 26.4ms | ActiveRecord: 1.7ms | Allocations: 4036)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:22:12 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 3285)
+Completed 200 OK in 31ms (Views: 24.7ms | ActiveRecord: 1.8ms | Allocations: 4045)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:23:19 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 3271)
+Completed 200 OK in 28ms (Views: 22.0ms | ActiveRecord: 1.7ms | Allocations: 4031)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:23:37 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 3260)
+Completed 200 OK in 32ms (Views: 24.6ms | ActiveRecord: 1.7ms | Allocations: 4020)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:25:43 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 188)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 89.6ms | Allocations: 9862)
+Completed 200 OK in 101ms (Views: 94.3ms | ActiveRecord: 1.8ms | Allocations: 11101)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:32:28 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 4451)
+Completed 200 OK in 76ms (Views: 34.9ms | ActiveRecord: 21.2ms | Allocations: 8052)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:32:49 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 39)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 4354)
+Completed 200 OK in 40ms (Views: 31.3ms | ActiveRecord: 2.3ms | Allocations: 5137)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:33:12 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 4357)
+Completed 200 OK in 41ms (Views: 34.9ms | ActiveRecord: 1.9ms | Allocations: 5117)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:33:42 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 4363)
+Completed 200 OK in 38ms (Views: 30.6ms | ActiveRecord: 2.6ms | Allocations: 5124)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:34:02 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 39)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 70.6ms | Allocations: 4367)
+Completed 200 OK in 84ms (Views: 71.6ms | ActiveRecord: 1.9ms | Allocations: 5127)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:34:35 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 4356)
+Completed 200 OK in 37ms (Views: 30.3ms | ActiveRecord: 1.9ms | Allocations: 5116)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:34:51 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 4363)
+Completed 200 OK in 35ms (Views: 26.8ms | ActiveRecord: 2.1ms | Allocations: 5123)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:36:39 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 4375)
+Completed 200 OK in 40ms (Views: 33.7ms | ActiveRecord: 1.7ms | Allocations: 5135)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:39:24 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 194)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 3365)
+Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 1.4ms | Allocations: 4604)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:40:56 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 4470)
+Completed 200 OK in 36ms (Views: 28.0ms | ActiveRecord: 1.9ms | Allocations: 5269)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:42:19 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 2551)
+Completed 200 OK in 24ms (Views: 16.2ms | ActiveRecord: 2.1ms | Allocations: 3334)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:43:25 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 39)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 4356)
+Completed 200 OK in 41ms (Views: 34.3ms | ActiveRecord: 1.4ms | Allocations: 5116)
+
+
+Started GET "/sessions/new" for ::1 at 2023-05-09 15:43:34 -0700
+Processing by SessionsController#new as HTML
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "[FILTERED]"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:47:in `block in generate_session_token'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 39)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 2557)
+Completed 200 OK in 21ms (Views: 13.1ms | ActiveRecord: 2.2ms | Allocations: 3317)
+
+
